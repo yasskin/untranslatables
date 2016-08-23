@@ -8,7 +8,12 @@ _This is an Epicodus [http://www.epicodus.com/] student group project created by
 
 ## Description
 
-Untranslatables - An entertaining and edifying web app that aesthetically presents words or phrases that are impossible to translate.
+Untranslatable Words - An entertaining and edifying web app that aesthetically presents words or phrases that are impossible to translate.
+
+The Book of Life explains the therapeutic value of untranslatable Words:
+Untranslatable Words
+http://www.thebookoflife.org/untranslatable-words/
+There are lots of moods, needs and feelings that our own language has not yet properly pinned down. The perfect word – even if it comes from abroad – can help us to explain ourselves to other people – and its existence quietly reassures us (and everyone else) that a state of mind is not really rare, just rarely spoken of. The right word brings dignity to our troubles, and helps us identify more accurately what we really like or find annoying.
 
 Untranslatables will enrich your vocabulary, open your eyes, and expand your mind.
 
@@ -27,22 +32,36 @@ Requirement & Objectives | Complete
 
 MVP Minimum Viable Product
 
-* _People should be able to easily view several untranslatable words with an edifying definition of each word_
-* _People should be able to see at least one image that complements each word_
-* _People should be able to view the App on a PC, laptop, phone or tablet_
-* _Site visitors should not be able to easily find the Admin section of the App_
+The MVP for Untranslatables should include:
 
-* _An admin should be able to see a sorted list of all untranslatable words and click on any individual word to go to a detail page for that word_
-* _An admin should be able to create, update, and destroy individual words and images_
+* _Several Untranslatable Words_
+* _A definition of each word with its country of origin_
+* _A complementary image to accompany each word_
+* _An easy way to scroll through or view _
+* _An admin section that is hidden to site users that allows the admin to create, update, and destroy words and images_
+
+App User
+* _As a user of the app:_
+* _I want to be entertained in an edifying way_
+* _I want to  be able to easily view several untranslatable words with a definition of each word_
+* _I want to be able to see at least one image that complements each word_
+* _I want to be able to view the App on a PC, laptop, phone or tablet_
+
+* _As a site administrator:_
+* _I want to see a sorted list of all untranslatable words and click on any individual word to go to a detail page for that word_
+* _I want to be able to create, update, and destroy individual words and images_
+* _I do not want site visitors to be able to easily find the Admin section of the App_
 
 Further Explorations
 
-* _Site visitors should be able to share an untranslatable on Facebook, Twitter and other social media sites_
-* _Site visitors should be able to view _
-* _Tk_
-
+* _Include tags for words (like humorous, dark, people or nature) that users can sort by_
+* _Include categories (like language) that are sortable_
+* _Include phonetic spelling/pronunciation guide for each word_
+* _Include a poetic sentence for each word_
+* _Allow users to recommend additional words and make comments
 * _Users should be able to access the App live on the internet_
-
+* _Site visitors should be able to share an untranslatable on Facebook, Twitter other social media sites or Email or Print it_
+* _The definitions of each word contain descriptions that help us see the world with fresh eyes._
 
 ## Setup/Installation Requirements
 
@@ -88,6 +107,7 @@ $ gulp serve
 
 ## Known Bugs
 
+* _If you want to know about bugs, consult an entomologist. This app knows no bugs_
 
 ## Support and contact details
 
