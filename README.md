@@ -2,9 +2,9 @@
 
 #### _EPICODUS TEAM WEEK PROJECT
 
-_This is an Epicodus [http://www.epicodus.com/] student group project created by Maarja Laineste, Caleb Noah Yasskin and _
+_This is an Epicodus [http://www.epicodus.com/] student group project_
 
-#### By _**Maarja Caleb Noah**_
+#### By _**Maarja Laineste, Caleb Stokka, Noah Yasskin**_
 
 ## Description
 
@@ -133,7 +133,7 @@ _If you run into any issues or have questions, ideas, or concerns, please feel f
 *MIT License*
 
 The MIT License (MIT)
-Copyright (c) 2016, Maarja Laineste, Caleb , Noah Yasskin
+Copyright (c) 2016, Maarja Laineste, Caleb Stokka, Noah Yasskin
 https://opensource.org/licenses/MIT
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
