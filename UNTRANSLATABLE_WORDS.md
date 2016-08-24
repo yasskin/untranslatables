@@ -74,8 +74,5 @@ A person who engages in the sexual act of frottage.
 frotteurism Noun (uncountable) (sexuality) The act of rubbing one’s genitalia against another’s person, usually that of a stranger. Must be non-consensual and is considered a psychiatric condition as well as a criminal offense in most places. (If consensual, it is known as frottage)
 The need to rub one’s genitalia against another’s person, usually that of a stranger.
 
-34. Bakku-shan (Japanese)
-A beautiful girl ... as long as she's being viewed from behind.
-
-35. Fernweh (German)
+34. Fernweh (German)
 Feeling homesick for a place you have never been to.

@@ -4,7 +4,7 @@
 
 _This is an Epicodus [http://www.epicodus.com/] student group project_
 
-#### By _**Maarja Laineste, Caleb Stokka, Noah Yasskin**_
+#### By _**Maarja Laineste, Caleb Stokka, Sky Rousse, Noah Yasskin**_
 
 ## Description
 
@@ -37,7 +37,7 @@ The MVP for Untranslatables should include:
 * _Several Untranslatable Words_
 * _A definition of each word with its country of origin_
 * _A complementary image to accompany each word_
-* _An easy way to scroll through or view _
+* _An easy way to scroll through or view_
 * _An admin section that is hidden to site users that allows the admin to create, update, and destroy words and images_
 
 App User
@@ -58,7 +58,7 @@ Further Explorations
 * _Include categories (like language) that are sortable_
 * _Include phonetic spelling/pronunciation guide for each word_
 * _Include a poetic sentence for each word_
-* _Allow users to recommend additional words and make comments
+* _Allow users to recommend additional words and make comments_
 * _Users should be able to access the App live on the internet_
 * _Site visitors should be able to share an untranslatable on Facebook, Twitter other social media sites or Email or Print it_
 * _The definitions of each word contain descriptions that help us see the world with fresh eyes._
@@ -133,7 +133,7 @@ _If you run into any issues or have questions, ideas, or concerns, please feel f
 *MIT License*
 
 The MIT License (MIT)
-Copyright (c) 2016, Maarja Laineste, Caleb Stokka, Noah Yasskin
+Copyright (c) 2016, Maarja Laineste, Caleb Stokka, Sky Rousse, and Noah Yasskin
 https://opensource.org/licenses/MIT
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
