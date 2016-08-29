@@ -20,5 +20,6 @@
   ],
   "atom": {
     "rewriteTsconfig": true
-  }
+  },
+  "files": []
 }

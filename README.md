@@ -99,10 +99,15 @@ $ npm install <!-- saved into node_modules/ -->
 5. Construct and display the App on the local server
 
 ```
-$ gulp build
+$ npm run gulp
 ```
 ```
-$ gulp serve
+$ npm start
+```
+6. Navigate to localhost:3000
+
+```
+$ mongod --dbpath ~/Desktop/untranslatables/data/db
 ```
 
 ## Known Bugs
