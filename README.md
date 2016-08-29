@@ -1,6 +1,6 @@
 # _Untranslatables_
 
-#### _EPICODUS TEAM WEEK PROJECT
+#### EPICODUS TEAM WEEK PROJECT
 
 _This is an Epicodus [http://www.epicodus.com/] student group project_
 
