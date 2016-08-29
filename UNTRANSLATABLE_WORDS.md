@@ -1,5 +1,16 @@
 Examples:
 
+name:
+definition:
+language:
+category:
+part-of-speech:
+sentence:
+color:
+link:
+font:
+image:
+
 1. Forelsket (Norwegian): the euphoric feeling at the beginning of love. We can’t believe someone so perfect has wandered into our lives. They enhance and complete us. We might report: ‘I was overpowered by forelsket as our fingers enlaced…’
 
 2. Jayus (Indonesian): a lame joke that nonetheless elicits good natured amusement – rather than irritation – at its sheer innocent silliness. The ability to treat an idiotic remark as a Jayus is a sign wisdom and kindness; evidence that we can accept that our minds are low as well as high.

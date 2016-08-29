@@ -17,8 +17,20 @@ There are lots of moods, needs and feelings that our own language has not yet pr
 
 Untranslatables will enrich your vocabulary, open your eyes, and expand your mind.
 
-Requirement & Objectives | Complete
-:------------- | :-------------: |
+*Front-End Tasks*
+Task | Complete
+Dozen definitions| --
+Images w/word| --
+Layout| --
+Navigation| --
+
+*Back-End Tasks*
+Task | Complete
+Angular2 setup| --
+CRUD/L for admin| --
+L + (R) for user| --
+One table database(Mongo DB)| --
+
 *Requirement*: Participation in creating and presenting a project, and collaborating effectively with teammates. | --
 
 | Component        | Action           | Parent  |
@@ -28,17 +40,35 @@ Requirement & Objectives | Complete
 | *Component      | New | AppComponent |
 | *Component      | Edit | AppComponent |
 
+*Database*
+| Table       | Row         | Value  |
+| ----------- |:-----------:| -----:|
+| words | name| string |
+|       | definition | string |
+|       | language | string |
+|       | category | string |
+|       | partOfSpeech | string  |
+|       | sentence | string |
+|       | color | string |
+|       | link | string |
+|       | font | string |
+|       | image | string |
+
+
+
 ## User Stories
 
 MVP Minimum Viable Product
 
 The MVP for Untranslatables should include:
 
-* _Several Untranslatable Words_
+* _At least a dozen untranslatable Words_
 * _A definition of each word with its country of origin_
 * _A complementary image to accompany each word_
 * _An easy way to scroll through or view_
 * _An admin section that is hidden to site users that allows the admin to create, update, and destroy words and images_
+* _A way to sort words_
+
 
 App User
 * _As a user of the app:_
@@ -46,22 +76,33 @@ App User
 * _I want to  be able to easily view several untranslatable words with a definition of each word_
 * _I want to be able to see at least one image that complements each word_
 * _I want to be able to view the App on a PC, laptop, phone or tablet_
+* _I want to be able to add words to a favorite list_
+
 
 * _As a site administrator:_
 * _I want to see a sorted list of all untranslatable words and click on any individual word to go to a detail page for that word_
 * _I want to be able to create, update, and destroy individual words and images_
-* _I do not want site visitors to be able to easily find the Admin section of the App_
+* _I do not want site visitors to be able to easily find the Admin section of the App (a password sign in for Admin)_
 
 Further Explorations
 
 * _Include tags for words (like humorous, dark, people or nature) that users can sort by_
+* _Site visitors should be able to share an untranslatable on Facebook, Twitter other social media sites or Email or Print it_
 * _Include categories (like language) that are sortable_
 * _Include phonetic spelling/pronunciation guide for each word_
 * _Include a poetic sentence for each word_
-* _Allow users to recommend additional words and make comments_
+* _Allow users to recommend additional words and/or make comments_
 * _Users should be able to access the App live on the internet_
-* _Site visitors should be able to share an untranslatable on Facebook, Twitter other social media sites or Email or Print it_
 * _The definitions of each word contain descriptions that help us see the world with fresh eyes._
+* _Create a game where users guess a word based on a definition_
+* _Create a memory game where users try to match two images/definitions_
+* _Allow users to sign up for a regular email with a new word sent to their inbox_
+* _Add country flag to each word_
+* _Link to additional information for each word_
+* _Create a splash page_
+* _Create a color picker for word tiles on the admin page_
+* _Allow users to click on a word and see an image (or an additional image)_
+
 
 ## Setup/Installation Requirements
 
