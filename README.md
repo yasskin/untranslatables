@@ -151,6 +151,7 @@ $ npm install <!-- saved into node_modules/ -->
 ```
 $ npm run gulp
 ```
+Start new terminal window
 ```
 $ npm start
 ```
