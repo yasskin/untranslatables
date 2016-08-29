@@ -18,20 +18,24 @@ There are lots of moods, needs and feelings that our own language has not yet pr
 Untranslatables will enrich your vocabulary, open your eyes, and expand your mind.
 
 *Front-End Tasks*
-Task | Complete
-Dozen definitions| --
-Images w/word| --
-Layout| --
-Navigation| --
+
+|Task | Complete |
+| ------------- |:-------------:|
+| Dozen definitions| -- |
+| Images w/word| -- |
+| Layout| -- |
+| Navigation| -- |
 
 *Back-End Tasks*
-Task | Complete
-Angular2 setup| --
-CRUD/L for admin| --
-L + (R) for user| --
-One table database(Mongo DB)| --
 
-*Requirement*: Participation in creating and presenting a project, and collaborating effectively with teammates. | --
+| Task | Complete |
+| ------------- |:-------------:|
+| Angular2 setup| -- |
+| CRUD/L for admin| -- |
+| L + (R) for user| -- |
+| One table database(Mongo DB)| -- |
+
+*Requirement*: Participation in creating and presenting a project, and collaborating effectively with teammates.
 
 | Component        | Action           | Parent  |
 | ------------- |:-------------:| -----:|
@@ -41,8 +45,9 @@ One table database(Mongo DB)| --
 | *Component      | Edit | AppComponent |
 
 *Database*
-| Table       | Row         | Value  |
-| ----------- |:-----------:| -----:|
+
+| Table     | Row       | Value  |
+| ----- |:-----------:| -----:|
 | words | name| string |
 |       | definition | string |
 |       | language | string |
