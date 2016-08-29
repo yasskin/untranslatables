@@ -132,6 +132,10 @@ $ npm install typescript -g
 ```
 $ apm install atom-typescript
 ```
+
+```
+$ brew install mongodb
+```
 3. Gather the UI packages the program requires
 
 ```
@@ -145,11 +149,19 @@ $ npm install <!-- saved into node_modules/ -->
 5. Construct and display the App on the local server
 
 ```
-$ gulp build
+$ npm run gulp
 ```
+Start new terminal window
 ```
-$ gulp serve
+$ npm start
 ```
+
+```
+$ mongod --dbpath ~/Desktop/untranslatables/data/db
+```
+
+6. Navigate to localhost:3000
+
 
 ## Known Bugs
 
