@@ -6,9 +6,14 @@ import { Word } from './word';
   template:`
     <div>
       {{ word.name }}
+    </div>
+    <div>
       {{ word.definition }}
     </div>
-  `
+    <div>
+      {{ word.origin }}
+    </div>  
+      `
 })
 export class WordComponent {
   @Input() word:Word;

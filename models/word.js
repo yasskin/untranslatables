@@ -7,12 +7,14 @@ var schema = new Schema({
   definition: {type: String, required: true},
   origin: {type: String, required: false},
   language: {type: String, required: false},
-  image: {type: String, required: false},
   sentence: {type: String, required: false},
   partOfSpeech: {type: String, required: false},
   color: {type: String, required: false},
   link: {type: String, required: false},
   font: {type: String, required: false},
+  image: {type: String, required: false},
+  imageCaption: {type: String, required: false},
+  imageSource: {type: String, required: false},
   user: {type: Schema.Types.ObjectId, ref: 'User'}
 });
 

@@ -12,6 +12,7 @@
     "outFile": "bundle.js"
   },
   "filesGlob": [
+    "**/*.ts",
     "./dev/**/*.ts",
     "!./node_modules/**/*.ts"
   ],
@@ -21,5 +22,14 @@
   "atom": {
     "rewriteTsconfig": true
   },
-  "files": []
+  "files": [
+    "assets/app/app.component.ts",
+    "assets/app/boot.ts",
+    "assets/app/words/word-input.component.ts",
+    "assets/app/words/word-list.component.ts",
+    "assets/app/words/word.component.ts",
+    "assets/app/words/word.service.ts",
+    "assets/app/words/word.ts",
+    "assets/app/words/words.component.ts"
+  ]
 }
