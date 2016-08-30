@@ -126,10 +126,10 @@ $ npm install gulp -g <!-- only needs to be done once, (already on epicodus mach
 $ npm install typescript -g <!-- only needs to be done once,  (already on epicodus machines)-->
 ```
 ```
-$ apm install atom-typescript <!-- only needs to be done once -->
+$ apm install atom-typescript <!-- needs to be done each day on epicodus machines -->
 ```
 ```
-$ brew install mongodb <!-- only needs to be done once -->
+$ brew install mongodb <!-- needs to be done each day on epicodus machines -->
 ```
 
 ### 3. Setup the Mongo DB
