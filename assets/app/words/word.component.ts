@@ -5,9 +5,9 @@ import { Word } from './word';
   selector: 'my-word',
   template:`
       <div class="word" [ngStyle]="{'background-image': 'url(' +  word.image + ')',
-    'background-repeat' : 'no-repeat',
-    'background-size' : 'cover',
-    'background-position' : 'center'}">
+      'background-repeat' : 'no-repeat',
+      'background-size' : 'cover',
+      'background-position' : 'center'}">
       <div class="center-header">
         <h2>{{ word.name }}</h2>
       </div>
