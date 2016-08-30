@@ -147,15 +147,15 @@ $ bower install <!-- saved into bower_components/ -->
 $ npm install <!-- saved into node_modules/ -->
 ```
 5. Construct and display the App on the local server
-
+Start gulp in a terminal // gulp compiles typscript into js
 ```
-$ npm run gulp
+$ npm run gulp 
 ```
-Start new terminal window
+Leave gulp running in one terminal and open another terminal and start the server
 ```
 $ npm start
 ```
-
+In a third terminal start (leaving the previous two running) start the Mongo Database
 ```
 $ mongod --dbpath ~/Desktop/untranslatables/data/db
 ```
