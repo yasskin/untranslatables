@@ -24,7 +24,10 @@
   },
   "files": [
     "assets/app/app.component.ts",
+    "assets/app/auth/authentication.component.ts",
+    "assets/app/auth/user.ts",
     "assets/app/boot.ts",
+    "assets/app/header.component.ts",
     "assets/app/words/word-input.component.ts",
     "assets/app/words/word-list.component.ts",
     "assets/app/words/word.component.ts",
