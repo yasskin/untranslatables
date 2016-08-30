@@ -4,15 +4,17 @@ import { Word } from './word';
 @Component({
   selector: 'my-word',
   template:`
-    <div>
-      {{ word.name }}
+    <div class="word">
+      <div>
+        {{ word.name }}
+      </div>
+      <div>
+        {{ word.definition }}
+      </div>
+      <div>
+        {{ word.origin }}
+      </div>
     </div>
-    <div>
-      {{ word.definition }}
-    </div>
-    <div>
-      {{ word.origin }}
-    </div>  
       `
 })
 export class WordComponent {
