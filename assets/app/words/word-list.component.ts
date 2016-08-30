@@ -5,7 +5,7 @@ import { WordService } from './word.service';
 @Component({
   selector: 'my-word-list',
   template:`
-    <div class="wrap"
+    <div class="wrap">
       <my-word *ngFor="#word of words" [word]="word"></my-word>
     </div>
   `,
