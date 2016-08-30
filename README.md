@@ -111,42 +111,52 @@ Further Explorations
 
 ## Setup/Installation Requirements
 
-1. Clone the repository from GitHub_
+### 1. Clone the repository from GitHub_
+
 ```
 $Git clone https://github.com/yasskin/untranslatables.git
 ```
-2. Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
+
+### 2. Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
 
 ```
-$ npm install gulp -g <!-- only needs to be done once -->
+$ npm install gulp -g <!-- only needs to be done once, (already on epicodus machines) -->
 ```
 ```
-$ npm install bower -g <!-- only needs to be done once -->
+$ npm install typescript -g <!-- only needs to be done once,  (already on epicodus machines)-->
 ```
 ```
-$ gem install sass
+$ apm install atom-typescript <!-- only needs to be done once -->
 ```
 ```
-$ npm install typescript -g
-```
-```
-$ apm install atom-typescript
+$ brew install mongodb <!-- only needs to be done once -->
 ```
 
-```
-$ brew install mongodb
-```
-3. Gather the UI packages the program requires
+### 3. Setup the Mongo DB
 
 ```
-$ bower install <!-- saved into bower_components/ -->
+$ mkdir -p /data/db 
 ```
-4. Gather the back-end packages the program requires
+if permission is denied running previous use this instead at system directory
+```
+$ mkdir data && mkdir data/db
+```
+ensure that the user account running mongod has read and write permissions for the directory. http://www.macinstruct.com/node/415 
+
+if you're unable to create directories at the system level you will need to point to the path of the of the data directory you created
+
+```
+$ mongod --dbpath <path to data directory>
+```
+
+### 4. Gather (build) the back-end packages the program requires
 
 ```
 $ npm install <!-- saved into node_modules/ -->
 ```
-5. Construct and display the App on the local server
+
+### 5. Run the App on the local server
+
 Start gulp in a terminal // gulp compiles typscript into js
 ```
 $ npm run gulp 
@@ -155,7 +165,7 @@ Leave gulp running in one terminal and open another terminal and start the serve
 ```
 $ npm start
 ```
-In a third terminal start (leaving the previous two running) start the Mongo Database
+In a third terminal start the Mongo database sever  (leaving the previous two terminals running)
 ```
 $ mongod --dbpath ~/Desktop/untranslatables/data/db
 ```
