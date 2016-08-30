@@ -25,7 +25,6 @@ export class WordComponent {
   constructor(private _wordService: WordService) {}
 
   delete(word) {
-    debugger;
     this._wordService.deleteWord(word);
   }
 }
