@@ -4,6 +4,7 @@ import { WordService } from './word.service';
 @Component({
   selector: 'my-word-input',
   template:`
+  <div class="hide-form">
     <div class="form-group">
       <label for='name'>Name</label>
       <input type="text" class="form-control" id="name" #nameInput>
@@ -53,6 +54,7 @@ import { WordService } from './word.service';
       <input type="text" class="form-control" id="imageSource" #imageSourceInput>
     </div>
     <button type="submit" class="btn btn-primary" (click)="onCreate(nameInput.value, definitionInput.value, originInput.value, languageInput.value, sentenceInput.value, partOfSpeechInput.value, colorInput.value, linkInput.value, fontInput.value, imageUrlInput.value, imageCaptionInput.value, imageSourceInput.value)">Create Word</button>
+  </div>
     `
 })
 export class WordInputComponent {

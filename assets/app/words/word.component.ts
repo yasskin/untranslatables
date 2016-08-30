@@ -4,17 +4,15 @@ import { Word } from './word';
 @Component({
   selector: 'my-word',
   template:`
-    <div class="word">
-      <div>
-        {{ word.name }}
+      <div class="word" [ngStyle]="{'background-image': 'url(' +  word.image + ')'}">
+      <div class="center-header">
+        <h3>{{ word.name }}</h3>
       </div>
-      <div>
-        {{ word.definition }}
       </div>
-      <div>
-        {{ word.origin }}
+      <div class="definition">
+        <p>{{ word.definition }}</p>
       </div>
-    </div>
+
       `
 })
 export class WordComponent {

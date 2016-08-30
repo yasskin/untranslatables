@@ -5,7 +5,7 @@ import { WordService } from './word.service';
 @Component({
   selector: 'my-word-list',
   template:`
-    <div class="wrap"
+    <div class="wrap">
       <my-word *ngFor="#word of words" [word]="word"></my-word>
     </div>
   `,
@@ -18,6 +18,12 @@ export class WordListComponent implements OnInit {
   words: Word[];
 
   ngOnInit() {
-    this.words = this._wordService.getWords();
+    // this.words = this._wordService.getWords();
+    this.words = [
+      new Word("Pisan Zapra", "The time needed to eat a banana", "images/pisan_zapra2.jpg"),
+      new Word("Schadenfreude", "The satisfaction we find in another person’s failure or suffering.", "images/schadenfreude.png"),
+      new Word("Age-otori", "The feeling of looking worse after a haircut.", "images/age_otori.jpg")
+    ];
+
   }
 }
