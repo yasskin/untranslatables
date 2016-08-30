@@ -3,12 +3,14 @@ import { Component } from 'angular2/core';
     selector: 'my-app',
     template: `
       <div class="wrap">
-        <h1>Hello World!</h1>
-        <h3 *ngFor="#word of words">
-        {{ word.name }}
-        "{{ word.definition}}"
-        <img src={{word.image}}>
-        </h3>
+        <h1>Untranslatable Words</h1>
+        <div class="word">
+          <h3 *ngFor="#word of words">
+          {{ word.name }}
+          "{{ word.definition}}"
+          <img src={{word.image}}>
+          </h3>
+        <div>
       </div>
     `
 })

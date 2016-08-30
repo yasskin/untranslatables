@@ -17,24 +17,6 @@ There are lots of moods, needs and feelings that our own language has not yet pr
 
 Untranslatables will enrich your vocabulary, open your eyes, and expand your mind.
 
-*Front-End Tasks*
-
-|Task | Complete |
-| ------------- |:-------------:|
-| Dozen definitions| -- |
-| Images w/word| -- |
-| Layout| -- |
-| Navigation| -- |
-
-*Back-End Tasks*
-
-| Task | Complete |
-| ------------- |:-------------:|
-| Angular2 setup| -- |
-| CRUD/L for admin| -- |
-| L + (R) for user| -- |
-| One table database(Mongo DB)| -- |
-
 *Requirement*: Participation in creating and presenting a project, and collaborating effectively with teammates.
 
 | Component        | Action           | Parent  |
@@ -135,13 +117,13 @@ $ brew install mongodb <!-- needs to be done each day on epicodus machines -->
 ### 3. Setup the Mongo DB
 
 ```
-$ mkdir -p /data/db 
+$ mkdir -p /data/db
 ```
 if permission is denied running previous use this instead at system directory
 ```
 $ mkdir data && mkdir data/db
 ```
-ensure that the user account running mongod has read and write permissions for the directory. http://www.macinstruct.com/node/415 
+ensure that the user account running mongod has read and write permissions for the directory. http://www.macinstruct.com/node/415
 
 if you're unable to create directories at the system level you will need to point to the path of the of the data directory you created
 
@@ -159,7 +141,7 @@ $ npm install <!-- saved into node_modules/ -->
 
 Start gulp in a terminal // gulp compiles typscript into js
 ```
-$ npm run gulp 
+$ npm run gulp
 ```
 Leave gulp running in one terminal and open another terminal and start the server
 ```
