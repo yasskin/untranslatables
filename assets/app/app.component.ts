@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import { Component } from 'angular2/core';
 import { WordsComponent } from './words/words.component';
 import { Word } from './words/word';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';

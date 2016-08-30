@@ -1,35 +1,44 @@
 { "words": [{
     "name": "Pisan Zapra",
     "definition": "The time needed to eat a banana",
+    "origin": "Malaysia",
     "language": "Malay",
-    "category": "Food",
-    "partOfSpeech": "Noun",
     "sentence": "This surely varies from person to person, and from banana to banana, but general consensus is that it takes around two minutes to consume one.",
+    "partOfSpeech": "Noun",
     "color": "Tomato",
     "link": "https://en.wikipedia.org/wiki/Malay_language",
     "font": "Ubuntu",
-    "image": "./../public/images/pisan_zapra.jpg"
+    "image": "./../public/images/pisan_zapra.jpg",
+    "imageCaption": "",
+    "imageSource": "",
+    "user": ""
   }, {
     "name": "Schadenfreude",
     "definition": "The satisfaction we find in another person’s failure or suffering.",
+    "origin": "Germany",
     "language": "German",
-    "category": "Emotion",
-    "partOfSpeech": "Noun",
     "sentence": "The source of the pleasure (which in polite circles we are supposed to find shameful) is at heart simply relief (rather than nastiness): that another person has been shown to be, like oneself, inadequate and unfortunate.",
+    "partOfSpeech": "Noun",
     "color": "Hotpink",
     "link": "https://en.wikipedia.org/wiki/German_language",
     "font": "Open Sans",
-    "image": "./../public/images/Schadenfreude.png"
+    "image": "./../public/images/Schadenfreude.png",
+    "imageCaption": "",
+    "imageSource": "",
+    "user": ""
   }, {
     "name": "Age-otori",
     "definition": "The feeling of looking worse after a haircut.",
+    "origin": "",
     "language": "Japanese",
-    "category": "Emotion",
-    "partOfSpeech": "Noun",
     "sentence": "Captures how hard it is for our plans to come off well.",
+    "partOfSpeech": "Noun",
     "color": "Teal",
     "link": "https://en.wikipedia.org/wiki/Japanese_language",
     "font": "Lato",
-    "image": "./../public/images/age_otori.jpg"
+    "image": "./../public/images/age_otori.jpg",
+    "imageCaption": "",
+    "imageSource": "",
+    "user": ""
   }]
 }

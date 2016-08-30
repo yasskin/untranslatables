@@ -12,12 +12,45 @@ body {
 }
 
 .wrap {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   border: 2px solid tomato;
 }
 
+.hide-form {
+  display: none;
+}
+
 .word {
+  width: 100%;
+  height: 40em;
+  border: 2px solid blue;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-header {
+  margin: auto;
+  border: 2px solid hotpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)*/
+}
+
+.definition {
+  border: 2px solid purple;
+  /*display: flex;
+  justify-content: center;
+  align-items: flex-end;*/
+}
+
+img {
   width: 100%;
 }
 

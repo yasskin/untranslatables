@@ -4,6 +4,7 @@ import { WordService } from './word.service';
 @Component({
   selector: 'my-word-input',
   template:`
+  <div class="hide-form">
     <form (ngSubmit)="onSubmit(f.value)" #f="ngForm">
       <div class="form-group">
         <label for='name'>Name</label>
@@ -55,6 +56,7 @@ import { WordService } from './word.service';
       </div>
       <button type="submit" class="btn btn-primary">Create Word</button>
     </form>
+  </div>  
     `
 })
 export class WordInputComponent {

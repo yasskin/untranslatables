@@ -22,9 +22,10 @@ Untranslatables will enrich your vocabulary, open your eyes, and expand your min
 | Component        | Action           | Parent  |
 | ------------- |:-------------:| -----:|
 | AppComponent      | holds data | -- |
-| *Component      | List | AppComponent |
-| *Component      | New | AppComponent |
+| *word-list     | List | AppComponent |
+| *word-input      | New | AppComponent |
 | *Component      | Edit | AppComponent |
+| *Component      | Delete | AppComponent |
 
 *Database*
 

@@ -5,18 +5,20 @@ import { WordService } from './word.service';
 @Component({
   selector: 'my-word',
   template:`
-    <div class="word">
-      <div>
-        {{ word.name }}
+      <div class="word" [ngStyle]="{'background-image': 'url(' +  word.image + ')',
+      'background-repeat' : 'no-repeat',
+      'background-size' : 'cover',
+      'background-position' : 'center'}">
+      <div class="center-header">
+        <h2>{{ word.name }}</h2>
       </div>
-      <div>
-        {{ word.definition }}
       </div>
-      <div>
-        {{ word.origin }}
+      <div class="definition">
+        <p>{{ word.definition }}</p>
       </div>
     </div>
     <button (click)="delete(word)"> Delete </button>
+
       `
 })
 export class WordComponent {
