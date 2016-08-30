@@ -1,6 +1,7 @@
-import { Component } from 'angular2/core';
+import { Component, OnInit } from 'angular2/core';
 import { Word } from './word';
 import { WordComponent } from './word.component';
+import { WordService } from './word.service';
 @Component({
   selector: 'my-word-list',
   template:`
@@ -8,10 +9,13 @@ import { WordComponent } from './word.component';
   `,
   directives: [WordComponent]
 })
-export class WordListComponent {
-  words: Word[] = [
-    new Word('testname', 'testdefinition'),
-    new Word('testname2', 'testdefinition2')
-  ];
-  console.log(words);
+export class WordListComponent implements OnInit {
+
+  constructor( private _wordService: WordService) {}
+
+  words: Word[];
+
+  ngOnInit() {
+    this.words = this._wordService.getWords();
+  }
 }

@@ -1,5 +1,6 @@
 import { Component } from 'angular2/core';
 import { Word } from './word';
+import { WordService } from './word.service';
 @Component({
   selector: 'my-word-input',
   template:`
@@ -13,8 +14,11 @@ import { Word } from './word';
     `
 })
 export class WordInputComponent {
+
+  constructor(private _wordService: WordService) {}
+
   onCreate(name: string, definition: string) {
     const word: Word = new Word(name, definition);
-    console.log(word);
+    this._wordService.addWord(word);
   }
 }

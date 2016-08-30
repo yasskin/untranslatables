@@ -11,6 +11,6 @@ import { Word } from './word';
   `
 })
 export class WordComponent {
-  @Input() word:Word:
+  @Input() word:Word;
 
 }
