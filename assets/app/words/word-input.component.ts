@@ -56,7 +56,7 @@ import { WordService } from './word.service';
       </div>
       <button type="submit" class="btn btn-primary">Create Word</button>
     </form>
-  </div>  
+  </div>
     `
 })
 export class WordInputComponent {
@@ -65,7 +65,14 @@ export class WordInputComponent {
 
   onSubmit(form:any) {
     const word: Word = new Word(form.name, form.definition, form.origin, form.language, form.sentence, form.partOfSpeech, form.color, form.link, form.font, form.imageUrl, form.imageCaption, form.imageSource);
-    this._wordService.addWord(word);
+    this._wordService.addWord(word)
+      .subscribe(
+        data => {
+          console.log(data);
+          this._wordService.words.push(data);
+        },
+        error => console.error(error)
+      );
   }
 
 }
