@@ -5,5 +5,9 @@ import {WordService} from './words/word.service';
 import {ROUTER_PROVIDERS} from "angular2/router";
 import {LocationStrategy, HashLocationStrategy} from "angular2/router";
 import {provide} from "angular2/core";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 bootstrap(AppComponent, [WordService, ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: HashLocationStrategy})]);

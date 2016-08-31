@@ -8,6 +8,7 @@ import {HeaderComponent} from './header.component';
 @Component({
     selector: 'my-app',
     template: `
+
         <my-header></my-header>
         <router-outlet></router-outlet>
     `,
