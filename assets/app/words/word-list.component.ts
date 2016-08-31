@@ -2,6 +2,9 @@ import { Component, OnInit } from 'angular2/core';
 import { Word } from './word';
 import { WordComponent } from './word.component';
 import { WordService } from './word.service';
+
+
+
 @Component({
   selector: 'my-word-list',
   template:`
