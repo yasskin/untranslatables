@@ -12,9 +12,9 @@ import { WordService } from './word.service';
       <div class="center-header">
         <h2>{{ word.name }}</h2>
       </div>
-      </div>
       <div class="definition">
-        <p>{{ word.definition }}</p>
+      <p>{{ word.definition }}</p>
+      </div>
       </div>
       <div class="config">
       <a (click)="onEdit()"> Edit </a>
