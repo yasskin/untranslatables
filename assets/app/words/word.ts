@@ -11,6 +11,7 @@ export class Word {
     public color?: string,
     public link?: string,
     public font?: string,
+    public imageUrl?: string,
     public imageCaption?: string,
     public imageSource?: string,
     public user?: string,

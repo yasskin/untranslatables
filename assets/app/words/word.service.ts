@@ -1,11 +1,12 @@
 import { Word } from './word';
 import {Http, Headers} from 'angular2/http';
-import {Injectable} from 'angular2/core';
+import {Injectable, EventEmitter} from 'angular2/core';
 import 'rxjs/Rx';
 import {Observable} from 'rxjs/Observable';
 @Injectable()
 export class WordService {
   words: Word[] = [];
+  wordUpdate = new EventEmitter<Word>();
 
   constructor (private _http: Http) {}
 
@@ -33,6 +34,10 @@ export class WordService {
         return objs;
       })
       .catch(error => Observable.throw(error.json()));
+  }
+
+  editWord(word: Word) {
+    this.wordUpdate.emit(word);
   }
 
   deleteWord(word: Word) {

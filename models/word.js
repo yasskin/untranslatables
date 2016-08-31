@@ -12,7 +12,7 @@ var schema = new Schema({
   color: {type: String, required: false},
   link: {type: String, required: false},
   font: {type: String, required: false},
-  image: {type: String, required: false},
+  imageUrl: {type: String, required: false},
   imageCaption: {type: String, required: false},
   imageSource: {type: String, required: false},
   user: {type: Schema.Types.ObjectId, ref: 'User'}
