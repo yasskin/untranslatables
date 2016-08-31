@@ -48,7 +48,7 @@ import { WordService } from './word.service';
       </div>
       <div class="form-group">
         <label for='imageCaption'>Image Caption</label>
-        <input ngControl="" type="text" class="form-control" id="imageCaption" #imageCaptionInput [ngModel]="word?.imageCaption">
+        <input ngControl="imageCaption" type="text" class="form-control" id="imageCaption" #imageCaptionInput [ngModel]="word?.imageCaption">
       </div>
       <div class="form-group">
         <label for='imageSource'>Image Source</label>
@@ -80,7 +80,13 @@ export class WordInputComponent implements OnInit {
       this.word.imageUrl = form.imageUrl;
       this.word.imageCaption = form.imageCaption;
       this.word.imageSource = form.imageSource;
-    }else {
+      this._wordService.updateWord(this.word)
+        .subscribe(
+          data => console.log(data),
+          error => console.error(error)
+        );
+      this.word = null;
+    } else {
     const word: Word = new Word(form.name, form.definition, form.origin, form.language, form.sentence, form.partOfSpeech, form.color, form.link, form.font, form.imageUrl, form.imageCaption, form.imageSource);
     this._wordService.addWord(word)
       .subscribe(

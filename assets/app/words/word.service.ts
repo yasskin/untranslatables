@@ -16,7 +16,7 @@ export class WordService {
     return this._http.post('http://localhost:3000/word', body, {headers: headers})
       .map(response => {
         const data = response.json().obj;
-        let word = new Word(data.name, data._id, data.definition, data.origin, data.language, data.sentence, data.partOfSpeech, data.color, data.link, data.font, data.image, data.imageCaption, data.imageSource,'Sky', null);
+        let word = new Word(data.name, data.definition, data.origin, data.language, data.sentence, data.partOfSpeech, data.color, data.link, data.font, data.imageUrl, data.imageCaption, data.imageSource, data._id);
         return word;
       })
       .catch(error => Observable.throw(error.json()));
@@ -28,11 +28,19 @@ export class WordService {
         const data = response.json().obj;
         let objs: any[] = [];
         for (let i =0; i < data.length; i++) {
-          let word = new Word(data[i].name, data[i]._id, data[i].definition, data[i].origin, data[i].language, data[i].sentence, data[i].partOfSpeech, data[i].color, data[i].link, data[i].font, data[i].image, data[i].imageCaption, data[i].imageSource,'Sky', null);
+          let word = new Word(data[i].name, data[i].definition, data[i].origin, data[i].language, data[i].sentence, data[i].partOfSpeech, data[i].color, data[i].link, data[i].font, data[i].imageUrl, data[i].imageCaption, data[i].imageSource, data[i]._id);
           objs.push(word);
         };
         return objs;
       })
+      .catch(error => Observable.throw(error.json()));
+  }
+
+  updateWord(word: Word) {
+    const body = JSON.stringify(word);
+    const headers = new Headers({'Content-Type': 'application/json'});
+    return this._http.patch('http://localhost:3000/word/' + word.wordId, body, {headers: headers})
+      .map(response => response.json())
       .catch(error => Observable.throw(error.json()));
   }
 
