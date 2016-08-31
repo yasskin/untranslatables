@@ -29,7 +29,7 @@ export class WordComponent {
 
   constructor(private _wordService: WordService) {}
 
-  editWord() {
+  onEdit() {
     this._wordService.editWord(this.word);
   }
 
