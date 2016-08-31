@@ -16,7 +16,7 @@ import {HeaderComponent} from './header.component';
 })
 @RouteConfig([
   {path: '/', name: 'Words', component: WordsComponent, useAsDefault: true},
-  {path: '/auth', name: 'Auth', component: AuthenticationComponent}
+  {path: '/auth/...', name: 'Auth', component: AuthenticationComponent}
 ])
 export class AppComponent {
   public words: Word[];

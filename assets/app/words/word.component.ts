@@ -16,7 +16,6 @@ import { WordService } from './word.service';
       <div class="definition">
         <p>{{ word.definition }}</p>
       </div>
-    </div>
     <button (click)="delete(word)"> Delete </button>
 
       `
