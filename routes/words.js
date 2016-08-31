@@ -63,6 +63,17 @@ router.patch('/:id', function(req, res, next) {
       });
     }
     doc.name = req.body.name;
+    doc.definition = req.body.definition;
+    doc.origin= req.body.origin;
+    doc.language= req.body.language;
+    doc.sentence= req.body.sentence;
+    doc.partOfSpeech= req.body.partOfSpeech;
+    doc.color= req.body.color;
+    doc.link= req.body.link;
+    doc.font= req.body.font;
+    doc.image= req.body.image;
+    doc.imageCaption= req.body.imageCaption;
+    doc.imageSource= req.body.imageSource;
     doc.save(function(err, result) {
       if (err) {
         return res.status(404).json({
