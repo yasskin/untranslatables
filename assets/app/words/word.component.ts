@@ -33,6 +33,10 @@ export class WordComponent {
   }
 
   onDelete() {
-    this._wordService.deleteWord(this.word);
+    this._wordService.deleteWord(this.word)
+      .subscribe(
+        data => console.log(data),
+        error => console.error(error)
+      );
   }
 }

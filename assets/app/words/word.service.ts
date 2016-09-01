@@ -50,5 +50,8 @@ export class WordService {
 
   deleteWord(word: Word) {
     this.words.splice(this.words.indexOf(word), 1);
+    return this._http.delete('http://localhost:3000/word/' + word.wordId)
+      .map(response => response.json())
+      .catch(error => Observable.throw(error.json()));
   }
 }

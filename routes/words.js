@@ -89,4 +89,33 @@ router.patch('/:id', function(req, res, next) {
   });
 });
 
+router.delete('/:id', function(req, res, next) {
+  Word.findById(req.params.id, function(err, doc) {
+    if (err) {
+      return res.status(404).json({
+        title: 'An error occurred',
+        error: err
+      });
+    }
+    if (!doc) {
+      return res.status(404).json({
+        title: 'No word found',
+        error: {message: 'Word cannot be found'}
+      });
+    }
+    doc.remove(function(err, result) {
+      if (err) {
+        return res.status(404).json({
+          title: 'An error occurred',
+          error: err
+        });
+      }
+      res.status(200).json({
+        message: 'Success',
+        obj: result
+      });
+    });
+  });
+});
+
 module.exports = router;
