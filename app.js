@@ -10,7 +10,7 @@ var appRoutes = require('./routes/app');
 var wordRoutes = require('./routes/words');
 
 var app = express();
-mongoose.connect('localhost:27017/untranslatables')
+mongoose.connect('test:test_pw@ds019816.mlab.com:19816/untranslatables')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
