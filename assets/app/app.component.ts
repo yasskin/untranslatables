@@ -4,6 +4,7 @@ import { Word } from './words/word';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {AuthenticationComponent} from './auth/authentication.component';
 import {HeaderComponent} from './header.component';
+import {WordInputComponent} from './words/word-input.component';
 
 @Component({
     selector: 'my-app',
@@ -18,6 +19,7 @@ import {HeaderComponent} from './header.component';
 @RouteConfig([
   {path: '/', name: 'Words', component: WordsComponent, useAsDefault: true},
   {path: '/auth/...', name: 'Auth', component: AuthenticationComponent}
+  {path: '/admin', name: 'Admin', component: WordInputComponent}
 ])
 export class AppComponent {
   public words: Word[];

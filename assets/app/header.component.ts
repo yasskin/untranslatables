@@ -8,6 +8,7 @@ import {ROUTER_DIRECTIVES} from "angular2/router";
         <ul class="">
           <li><a [routerLink]="['Words']">Home</a></li>
           <li><a [routerLink]="['Auth']">Authentication</a></li>
+          <li><a [routerLink]="['Admin']">Admin</a></li>
         </ul>
       </nav>
     </header>

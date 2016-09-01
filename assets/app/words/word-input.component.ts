@@ -4,7 +4,7 @@ import { WordService } from './word.service';
 @Component({
   selector: 'my-word-input',
   template:`
-  <div class="hide-form">
+  <div class="hide-form container">
     <form (ngSubmit)="onSubmit(f.value)" #f="ngForm">
       <div class="form-group">
         <label for='name'>Name</label>
@@ -41,11 +41,7 @@ import { WordService } from './word.service';
       <div class="form-group">
         <label for='font'>Font</label>
         <input ngControl="font" type="text" class="form-control" id="font" #fontInput [ngModel]="word?.font">
-      </div>
-      <div class="form-group">
-        <label for='imageUrl'>Image URL</label>
-        <input ngControl="imageUrl" type="text" class="form-control" id="imageUrl" #imageUrlInput [ngModel]="word?.imageUrl">
-      </div>
+      </div>>
       <div class="form-group">
         <label for='imageCaption'>Image Caption</label>
         <input ngControl="imageCaption" type="text" class="form-control" id="imageCaption" #imageCaptionInput [ngModel]="word?.imageCaption">
