@@ -13,7 +13,7 @@ import { WordService } from './word.service';
         <h2>{{ word.name }}</h2>
       </div>
       <div class="definition">
-      <p>{{ word.definition }}</p>
+      <p>{{ word.definition }} ({{word.language}})</p>
       </div>
       </div>
       <div class="config">
