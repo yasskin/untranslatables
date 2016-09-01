@@ -21,6 +21,35 @@ body {
   animation: bgColor 20s ease-in-out backwards infinite;
 }
 
+nav {
+  margin-top: 2%;
+}
+
+nav ul {
+  display: flex;
+  /*color: #364156;*/
+}
+
+nav a {
+  color: #364156;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #2B2D42;
+}
+
+nav li {
+  padding: 0;
+  list-style: none;
+  font-size: 1.1em;
+
+}
+
+nav li:last-child {
+  margin-left: 2%;
+}
+
 .wrap {
   width: 70%;
   margin: 0 auto;
@@ -58,10 +87,10 @@ body {
 
 .word h2 {
   text-transform: uppercase;
-  /*color: #EFEFEF;*/
-  color: #364156;
+  color: #EFEFEF;
+  text-shadow: 1.5px 1.5px #CDCDCD;
   /*color: #DFF8EB;*/
-  font-size: 5.5em;
+  font-size: 6.5em;
   text-align: center;
   -webkit-animation: fadeIn 5s ease-in-out backwards;
   -moz-animation: fadeIn 5s ease-in-out backwards;
