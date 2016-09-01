@@ -22,7 +22,7 @@ body {
 }
 
 .hide-form {
-  /*display: none;*/
+  display: none;
 }
 
 .search-results {

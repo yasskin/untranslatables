@@ -5,7 +5,7 @@ import { WordService } from './word.service';
 @Component({
   selector: 'my-word',
   template:`
-      <div class="word" [ngStyle]="{'background-image': 'url(' +  word.image + ')',
+      <div class="word" [ngStyle]="{'background-image': 'url(' +  word.imageSource + ')',
       'background-repeat' : 'no-repeat',
       'background-size' : 'cover',
       'background-position' : 'center'}">
