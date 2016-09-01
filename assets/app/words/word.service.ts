@@ -13,7 +13,7 @@ export class WordService {
   addWord(word: Word) {
     const body = JSON.stringify(word);
     const headers = new Headers({'Content-Type': 'application/json'});
-    return this._http.post('http://localhost:3000/word', body, {headers: headers})
+    return this._http.post('http://untranslatables.herokuapp.com/word', body, {headers: headers})
       .map(response => {
         const data = response.json().obj;
         let word = new Word(data.name, data.definition, data.origin, data.language, data.sentence, data.partOfSpeech, data.color, data.link, data.font, data.imageUrl, data.imageCaption, data.imageSource, data._id);
@@ -23,7 +23,7 @@ export class WordService {
   }
 
   getWords() {
-    return this._http.get('http://localhost:3000/word')
+    return this._http.get('http://untranslatables.herokuapp.com/word')
       .map(response => {
         const data = response.json().obj;
         let objs: any[] = [];
@@ -39,7 +39,7 @@ export class WordService {
   updateWord(word: Word) {
     const body = JSON.stringify(word);
     const headers = new Headers({'Content-Type': 'application/json'});
-    return this._http.patch('http://localhost:3000/word/' + word.wordId, body, {headers: headers})
+    return this._http.patch('http://untranslatables.herokuapp.com/word/' + word.wordId, body, {headers: headers})
       .map(response => response.json())
       .catch(error => Observable.throw(error.json()));
   }
@@ -50,7 +50,7 @@ export class WordService {
 
   deleteWord(word: Word) {
     this.words.splice(this.words.indexOf(word), 1);
-    return this._http.delete('http://localhost:3000/word/' + word.wordId)
+    return this._http.delete('http://untranslatables.herokuapp.com/word/' + word.wordId)
       .map(response => response.json())
       .catch(error => Observable.throw(error.json()));
   }

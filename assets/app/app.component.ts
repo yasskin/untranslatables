@@ -18,7 +18,7 @@ import {WordInputComponent} from './words/word-input.component';
 })
 @RouteConfig([
   {path: '/', name: 'Words', component: WordsComponent, useAsDefault: true},
-  {path: '/auth/...', name: 'Auth', component: AuthenticationComponent}
+  {path: '/auth/...', name: 'Auth', component: AuthenticationComponent},
   {path: '/admin', name: 'Admin', component: WordInputComponent}
 ])
 export class AppComponent {
