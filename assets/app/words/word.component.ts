@@ -1,4 +1,4 @@
-import { Component, Input } from 'angular2/core';
+import { Component, Input, EventEmitter, Output } from 'angular2/core';
 import { Word } from './word';
 import { WordService } from './word.service';
 
@@ -12,20 +12,27 @@ import { WordService } from './word.service';
       <div class="center-header">
         <h2>{{ word.name }}</h2>
       </div>
-      </div>
       <div class="definition">
-        <p>{{ word.definition }}</p>
+      <p>{{ word.definition }}</p>
       </div>
-    <button (click)="delete(word)"> Delete </button>
-
+      </div>
+      <div class="config">
+      <a (click)="onEdit()"> Edit </a>
+      <a (click)="onDelete()"> Delete </a>
+      </div>
       `
 })
 export class WordComponent {
   @Input() word:Word;
+  @Output() editClicked = new EventEmitter<string>();
 
   constructor(private _wordService: WordService) {}
 
-  delete(word) {
-    this._wordService.deleteWord(word);
+  onEdit() {
+    this._wordService.editWord(this.word);
+  }
+
+  onDelete() {
+    this._wordService.deleteWord(this.word);
   }
 }

@@ -5,5 +5,7 @@ import {WordService} from './words/word.service';
 import {ROUTER_PROVIDERS} from "angular2/router";
 import {LocationStrategy, HashLocationStrategy} from "angular2/router";
 import {provide} from "angular2/core";
+import {HTTP_PROVIDERS} from "angular2/http";
 
-bootstrap(AppComponent, [WordService, ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: HashLocationStrategy})]);
+
+bootstrap(AppComponent, [WordService, ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: HashLocationStrategy}), HTTP_PROVIDERS]);
