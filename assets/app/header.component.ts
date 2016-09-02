@@ -11,6 +11,7 @@ import {ROUTER_DIRECTIVES} from "angular2/router";
           <li><a [routerLink]="['Admin']">Admin</a></li>
         </ul>
       </nav>
+      <h1>Untranslatable Words</h1>
     </header>
   `,
   directives: [ROUTER_DIRECTIVES]
