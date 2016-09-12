@@ -1,4 +1,4 @@
-# _Untranslatables_
+# _Untranslatable Words_
 
 #### EPICODUS TEAM WEEK PROJECT
 
@@ -9,6 +9,9 @@ _This is an Epicodus [http://www.epicodus.com/] student group project_
 ## Description
 
 Untranslatable Words - An entertaining and edifying web app that aesthetically presents words or phrases that are impossible to translate.
+
+The Web App is hosted live on Heroku:
+http://untranslatables.herokuapp.com/
 
 The Book of Life explains the therapeutic value of untranslatable Words:
 Untranslatable Words
